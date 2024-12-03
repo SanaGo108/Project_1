@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %}Личный кабинет{% endblock %}
+
+{% block content %}
+<div class="account-container">
+    <h2>{{ user.username }}, добро пожаловать в гипермаркет цветов!</h2>
+    <p>Это ваш личный кабинет.</p>
+    <button class="edit-btn"><a href="/users/edit/">Личные данные</a></button>
+</div>
+{% endblock %}
